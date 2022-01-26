@@ -15,7 +15,7 @@ h1 {
 body {
     margin:0;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
     background-color: #1F2937;
 }
 
@@ -32,11 +32,8 @@ body {
 
 .logo {
     display:flex;
+    padding-left: 5em;
     height:50px;
-}
-
-img {
-    height:auto;
 }
 
 .logo img{
@@ -44,11 +41,8 @@ img {
     border-radius: 50%;
 }
 
-.right-banner img {
-    height: auto;
-}
-
 ul {
+    padding-right: 5em;
     display: flex;
     flex: 1;
     justify-content: flex-end;
@@ -74,11 +68,18 @@ ul {
 }
 
 .left-banner {
+    padding-left: 5em;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.right-banner img {
+    width:100%;
+    object-fit: cover;
+}
+
 .right-banner {
+    padding-right: 5em;
     justify-content: flex-end;
 }
 
